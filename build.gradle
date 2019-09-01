@@ -11,7 +11,6 @@ plugins {
     id 'java'    
     id 'war'
     id "com.bmuschko.tomcat" version "2.5"
-    id 'eclipse-wtp'
     id 'eclipse'
 }
 
@@ -22,8 +21,7 @@ repositories {
 }
 
 dependencies {
-    // This dependency is exported to consumers, that is to say found on their compile classpath.
-    //api 'org.apache.commons:commons-math3:3.6.1'
+    // This dependency is exported to consumers, that is to say found on their compile classpath.    
     compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
     compile group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
